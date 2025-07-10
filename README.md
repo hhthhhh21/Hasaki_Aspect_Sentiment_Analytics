@@ -11,9 +11,9 @@ This project focuses on crawling customer reviews from Hasaki.vn, a leading beau
 
 ---
 
-## Project Motivation & Objectives
+## Objectives
 
-With the boom in e-commerce, understanding customer sentiment becomes crucial for business success. This project aims to:
+This project aims to:
 
 - Collect real customer feedback to analyze satisfaction and pain points.  
 - Develop machine learning models to classify sentiment (positive, neutral, negative) by aspect (Quality, Packaging, Price, Service, Store, Miscellaneous).  
@@ -34,7 +34,7 @@ With the boom in e-commerce, understanding customer sentiment becomes crucial fo
 
 ## Data Labeling Approach
 
-Used Gemini API to automatically label:
+Used Gemini API to automatically label aspect and sentiment for each sentence. After auto-labeling, we performed manual validation to check and correct mislabeling cases, ensuring high-quality labeled data for model training.
 
 ### Sentiment labels (3):
 
@@ -51,17 +51,15 @@ Used Gemini API to automatically label:
 - STORE  
 - MISCELLANEOUS
 
-Each comment was split into sentences, and each sentence received exactly one aspect label and one sentiment label.
-
 ---
 
 ## Project Structure
 
 ```
 Hasaki_NLP_Analytics/
-├── code_crawl_data/        # Web scraping scripts (Selenium)
-├── code_model/             # NLP preprocessing and model training scripts
-├── data/                   # Raw and processed datasets (CSV)
+├── code_crawl_data/        # Web scraping (Selenium) and NLP preprocessing
+├── code_model/             # Model training 
+├── data/                   # Raw and processed datasets
 ├── model/                  # Saved ML models
 ├── Hasaki_Analytics.pbix   # Power BI dashboard file
 ├── Hasaki_Analytics.pdf    # Dashboard report export
@@ -89,10 +87,9 @@ Compared multiple ML models:
 - Support Vector Machine  
 - Random Forest  
 - Naïve Bayes  
-- Artificial Neural Network (ANN)
+- Neural Network
 
 **Evaluation:** Accuracy, Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC.
-
 **Model selection:** Chose the best-performing model for each aspect-sentiment combination.
 
 ### Dashboard
@@ -102,7 +99,7 @@ Developed with Power BI to visualize:
 - Sentiment distribution by aspect  
 - Top positive/negative aspects  
 - Product performance summaries
-
+You can access the dashboard by opening the Hasaki_Analytics.pbix file using Power BI Desktop.
 ---
 
 ## Key Results & Insights
@@ -115,9 +112,7 @@ Developed with Power BI to visualize:
 
 ## Future Work
 
-- Enhance NLP preprocessing to handle Vietnamese slang, abbreviations, and spelling errors.  
-- Improve labeling accuracy by combining Gemini API with manual validation.  
-- Expand dataset to include more product categories.  
+- Automate the data crawling and updating process by scheduling scripts and storing the data directly into a database, enabling seamless data integration and scalability. 
 - Deploy as a Streamlit web app for live sentiment analysis.
 
 ---
@@ -139,7 +134,6 @@ Through this project, I have:
 
 - Python 3.11  
 - Selenium  
-- Streamlit (optional for web app deployment)  
 - Power BI Desktop  
 - GitHub  
 - Other Python libraries listed in `requirements.txt`
