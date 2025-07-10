@@ -95,7 +95,6 @@ Compared multiple ML models:
 ### Dashboard
 
 Developed with Power BI to visualize:
-
 - Sentiment distribution by aspect  
 - Top positive/negative aspects  
 - Product performance summaries
