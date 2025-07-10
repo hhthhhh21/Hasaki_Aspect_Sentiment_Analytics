@@ -1,13 +1,5 @@
 # Hasaki Aspect Sentiment Analytics
-
 ---
-
-## Project Title
-
-**Hasaki NLP Analytics**
-
----
-
 ## Introduction
 
 This project focuses on crawling customer reviews from Hasaki.vn, a leading beauty e-commerce platform in Vietnam, and applying Aspect-Based Sentiment Analysis (ABSA) techniques. It includes:
