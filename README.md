@@ -23,7 +23,7 @@ With the boom in e-commerce, understanding customer sentiment becomes crucial fo
 
 ## Dataset
 
-**Source:** Crawled from Hasaki.vn using Selenium.
+**Source:** Crawled from [Hasaki.vn](https://hasaki.vn/) using Selenium.
 
 **Content:** Product reviews including:
 
