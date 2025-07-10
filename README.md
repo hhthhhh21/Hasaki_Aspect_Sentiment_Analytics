@@ -99,7 +99,7 @@ Developed with Power BI to visualize:
 - Sentiment distribution by aspect  
 - Top positive/negative aspects  
 - Product performance summaries
-You can access the dashboard by opening the Hasaki_Analytics.pbix file using Power BI Desktop.
+You can access the dashboard by opening the `Hasaki_Analytics.pbix` file using Power BI Desktop.
 ---
 
 ## Key Results & Insights
@@ -157,10 +157,14 @@ pip install -r requirements.txt
 
 ### Run project:
 
-1. Run data crawling scripts in `code_crawl_data/` to update the dataset.  
-2. Execute NLP modeling scripts in `code_model/` to train or test models.  
-3. Open `Hasaki_Analytics.pbix` with Power BI Desktop to explore the dashboard.
-
+1. Run data crawling scripts in `code_crawl_data/` to update the dataset.
+   - Run `crawl_product.py` to crawl all product information.  
+   - Run `crawl_comment.py` to crawl customer reviews for each product.
+   - Run `data_label.py` to label each comment using Gemini API.
+   - Run `data_preprocessing.py` for text cleaning and feature engineering.
+   
+3. Execute NLP modeling scripts in `code_model/` to train or test models.  
+4. Open `Hasaki_Analytics.pbix` with Power BI Desktop to explore the dashboard.
 > **Note:** API key setup for Gemini API is required before running labeling scripts (not included in repo).
 
 ---
