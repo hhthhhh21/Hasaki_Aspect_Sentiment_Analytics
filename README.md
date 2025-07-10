@@ -99,6 +99,7 @@ Developed with Power BI to visualize:
 - Sentiment distribution by aspect  
 - Top positive/negative aspects  
 - Product performance summaries
+  
 You can access the dashboard by opening the `Hasaki_Analytics.pbix` file using Power BI Desktop.
 ---
 
